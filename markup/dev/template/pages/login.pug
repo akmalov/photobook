@@ -1,0 +1,24 @@
+extends ../_template
+
+block variables
+    - var title = 'Login page'
+
+block content
+    .hello
+        h1.hello__title Welcome
+        .hello__description This service will help you organize your photos into albums and share them with whole world!
+        .form-wrapper
+            form.hello__form
+                .hello__login-wrapper
+                    input.hello__login(placeholder='Email')
+                    .hello__login-icon
+                .hello__password-wrapper
+                    input.hello__password(placeholder='Password')
+                    .hello__password-icon
+                .hello__form-bottom
+                    a.link.link_blue.link_forget Forget your password?
+                    .hello__error Wrong Email or password
+                    button(type=submit).button.button_blue-background.button_signin Sign in
+            .hello__bottom
+                .hello__bottom-text No account?
+                .a.link.link_blue Sign up

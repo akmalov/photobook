@@ -1,0 +1,33 @@
+.link {
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Proxima Nova";
+  line-height: 1.714;
+  font-weight: bold;
+
+  &_blue {
+    color: rgba(40, 187, 240, 0.8);
+
+    &:hover {
+      color: rgba(36, 176, 227, 0.8);
+    }
+  }
+}
+
+.button {
+  border: none;
+  font-size: 14px;
+  font-family: "Panton";
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 20px;
+
+  &_blue-background {
+    color: #fff;
+    background-color: rgb(40, 187, 240);
+
+    &:hover {
+      background-color: rgb(36, 176, 227);
+    }
+  }
+}
