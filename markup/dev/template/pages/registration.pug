@@ -1,0 +1,25 @@
+extends ../_template
+
+block variables
+    - var title = 'Registration page'
+
+block content
+    .hello
+        h1.hello__title.hello__title_registration Registration
+        .form-wrapper
+            form.hello__form
+                .hello__name-wrapper
+                    input.hello__name(placeholder='Name')
+                    .hello__name-icon
+                .hello__email-wrapper
+                    input.hello__email(placeholder='Email')
+                    .hello__email-icon
+                .hello__password-wrapper
+                    input.hello__password(placeholder='Password')
+                    .hello__password-icon
+                .hello__form-bottom
+                    .hello__bottom-text.hello__bottom-text_registration Your data is confidential
+                    button(type=submit).button.button_blue-background.button_signin Sign up
+            .hello__bottom
+                .hello__bottom-text Already have account?
+                .a.link.link_blue Sign in

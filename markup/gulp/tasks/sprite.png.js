@@ -9,7 +9,7 @@ module.exports = function () {
             padding: 20
         }));
         var imgStream = spriteData.img
-            .pipe($.gulp.dest('./build/img')); // путь куда записываем спрайт
+            .pipe($.gulp.dest('./dev/images')); // путь куда записываем спрайт
 
         var cssStream = spriteData.css
             .pipe($.gulp.dest('./dev/style/common')); // путь куда записываем файл стилей для спрайта
