@@ -75,8 +75,7 @@
       left: 20px;
       width: 15px;
       height: 18px;
-      background: url("../img/sprite.png");
-      background-position: 15px;
+      fill: rgba(50, 50, 50, 0.6);
     }
   }
 
@@ -87,11 +86,15 @@
 
     &-icon {
       position: absolute;
-      top: 13px;
+      top: 12px;
       left: 20px;
       width: 15px;
       height: 13px;
-      background: url("../img/sprite.png");
+      fill: rgba(50, 50, 50, 0.6);
+    }
+
+    &:focus .hello__email-icon svg {
+      fill: rgba(40, 187, 240, 0.8);
     }
 
     &_forget {
@@ -113,8 +116,7 @@
       left: 20px;
       width: 15px;
       height: 18px;
-      background: url("../img/sprite.png");
-      background-position: 50px;
+      fill: rgba(50, 50, 50, 0.6);
     }
   }
 
