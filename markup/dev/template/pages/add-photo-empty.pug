@@ -1,0 +1,28 @@
+extends ../_template
+
+block variables
+    - var title = 'Add photo empty'
+
+block content
+    .add-photo
+        .add-photo__header
+            .add-photo__title Add photo
+            .add-photo__close
+                .add-photo__close-cross-left
+                .add-photo__close-cross-right
+        .add-photo__content-wrapper
+            .add-photo__content-top
+                .add-photo__name Name
+                .add-photo__text Summer
+            main.add-photo__photos.add-photo__photos_empty
+                .add-photo__text-wrapper
+                    .add-photo__icon
+                        svg(style="width:40px;height:28px" viewBox="0 0 24 24")
+                            path(d="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z")
+                    .add-photo__text Drag photo here
+                    .add-photo__text or
+                        span.link.link_blue.link_add-photo &nbsp;choose file
+            .add-photo__error Chosen wrong format of pictures. Try again
+        .add-photo__bottom
+            button(type=button).button.button_blue-background.button_standard.add-photo__save-button Save
+            a.link.link_blue Cancel

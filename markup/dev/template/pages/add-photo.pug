@@ -1,0 +1,33 @@
+extends ../_template
+
+block variables
+    - var title = 'Add photo'
+
+block content
+    .add-photo
+        .add-photo__header
+            .add-photo__title Add photo
+            .add-photo__close
+                .add-photo__close-cross-left
+                .add-photo__close-cross-right
+        .add-photo__content-wrapper
+            .add-photo__content-top
+                .add-photo__name Name
+                .add-photo__text Summer
+            main.add-photo__photos
+                ul.add-photo__photos-list
+                    li.add-photo__photos-item(style="background: url(img/add-photo-1.png)")
+                        .add-photo__photos-item-close
+                    li.add-photo__photos-item(style="background: url(img/add-photo-2.png)")
+                        .add-photo__photos-item-close
+                    li.add-photo__photos-item(style="background: url(img/add-photo-3.png)")
+                        .add-photo__photos-item-close
+                    li.add-photo__photos-item(style="background: url(img/add-photo-4.png)")
+                        .add-photo__photos-item-close
+                    li.add-photo__photos-item(style="background: url(img/add-photo-5.png)")
+                        .add-photo__photos-item-close
+                    li.add-photo__photos-item(style="background: url(img/add-photo-6.png)")
+                        .add-photo__photos-item-close
+        .add-photo__bottom
+            button(type=button).button.button_blue-background.button_standard.add-photo__save-button Save
+            a.link.link_blue Cancel
