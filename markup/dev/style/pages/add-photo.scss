@@ -27,28 +27,9 @@
   &__close {
     position: relative;
     cursor: pointer;
-
-    &-cross {
-      &:hover .add-photo__close-cross-left,
-      &:hover .add-photo__close-cross-right {
-        background: darken(#9d9d9d, 10%);
-      }
-
-      &-left, &-right {
-        width: 35px;
-        height: 5px;
-        border-radius: 3px;
-        background: #9d9d9d;
-      }
-
-      &-left {
-        transform: rotate(45deg);
-      }
-
-      &-right {
-        transform: rotate(-45deg) translate(4px, -3px);
-      }
-    }
+    background: url("../img/close.svg");
+    width: 26px;
+    height: 26px;
   }
 
   &__content-wrapper {
@@ -72,7 +53,9 @@
   }
 
   &__icon {
-    fill: #d1d1d1;
+    width: 40px;
+    height: 32px;
+    background: url("../img/cam.svg");
     margin-bottom: 10px;
   }
 

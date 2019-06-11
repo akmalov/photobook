@@ -2,3 +2,18 @@ extends ../_template
 
 block variables
   - var title = 'Home page'
+block content
+  include ../common/header
+  .search-wrapper
+    include ../common/search-input
+  .new
+    .new__title.common-title News of the world
+    include ../common/photocard
+    include ../common/photocard
+    include ../common/photocard
+    include ../common/photocard
+    include ../common/photocard
+    include ../common/photocard
+  .my-albums
+    .my-albums__title.common-title My albums
+  

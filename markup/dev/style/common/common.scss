@@ -41,8 +41,32 @@
     background: transparent;
 
     &:hover {
-      color: rgb(36, 176, 227);
+      color: #ffffff;
       border: 1px solid rgb(36, 176, 227);
+      background: rgb(40, 187, 240);
     }
+  }
+}
+
+.notification {
+  width: 280px;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    font-size: 16px;
+    font-family: "Proxima Nova";
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+    line-height: 1.313;
+    padding: 20px 25px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #f1f1f1;
   }
 }
